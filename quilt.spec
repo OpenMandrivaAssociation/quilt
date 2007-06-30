@@ -7,12 +7,14 @@ Summary:	Scripts for working with series of patches
 License:	GPL
 Group:		Development/Other
 Version:	0.45
-Release:	%mkrel 1
+Release:	%mkrel 2
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
+Requires:	diffstat
 Source:		quilt-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
-BuildRequires:  sendmail-command diffstat
+# sendmail-command is needed for testing purpose
+BuildRequires: sendmail-command  diffstat
 
 %description
 The scripts allow to manage a series of patches by keeping
@@ -28,7 +30,7 @@ Authors:
     Andreas Gruenbacher <agruen@suse.de>
 
 %prep
-%setup
+%setup -q
 
 %build
 %configure
