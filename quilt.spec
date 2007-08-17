@@ -57,8 +57,8 @@ rm -rf $RPM_BUILD_ROOT
 /usr/share/quilt/
 %{_libdir}/quilt/
 /etc/bash_completion.d/quilt
-%doc %{_mandir}/man1/guards.1.bz2
-%doc %{_mandir}/man1/quilt.1.bz2
+%doc %{_mandir}/man1/guards.*
+%doc %{_mandir}/man1/quilt.*
 %doc %{_docdir}/%{name}-%{version}/README.MAIL
 %doc %{_docdir}/%{name}-%{version}/README
 %doc %{_docdir}/%{name}-%{version}/quilt.pdf
