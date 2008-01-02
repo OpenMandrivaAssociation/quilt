@@ -12,6 +12,7 @@ URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
 Requires:	diffstat
 Source:		quilt-%{version}.tar.gz
+BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 # sendmail-command is needed for testing purpose
 BuildRequires: sendmail-command  diffstat
 
