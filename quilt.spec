@@ -24,10 +24,6 @@ applied, un-applied, refreshed, etc.
 The scripts are heavily based on Andrew Morton's patch scripts
 found at http://www.zip.com.au/~akpm/linux/patches/.
 
-Authors:
---------
-    Andrew Morton <akpm@digeo.com>
-    Andreas Gruenbacher <agruen@suse.de>
 
 %prep
 %setup -q
