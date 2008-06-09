@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 /etc/bash_completion.d/quilt
 %doc %{_mandir}/man1/guards.*
 %doc %{_mandir}/man1/quilt.*
-%doc %{_docdir}/%{name}-%{version}/
+%doc %{_docdir}/%{name}-%{version}
