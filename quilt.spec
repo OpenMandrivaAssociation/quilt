@@ -7,7 +7,7 @@ Summary:	Scripts for working with series of patches
 License:	GPL
 Group:		Development/Other
 Version:	0.46
-Release:	%mkrel 1
+Release:	%mkrel 2
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
 Requires:	diffstat
@@ -55,6 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 /etc/bash_completion.d/quilt
 %doc %{_mandir}/man1/guards.*
 %doc %{_mandir}/man1/quilt.*
-%doc %{_docdir}/%{name}-%{version}/README.MAIL
-%doc %{_docdir}/%{name}-%{version}/README
-%doc %{_docdir}/%{name}-%{version}/quilt.pdf
+%doc %{_docdir}/%{name}-%{version}/
