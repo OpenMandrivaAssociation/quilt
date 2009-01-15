@@ -6,15 +6,15 @@ Name:		quilt
 Summary:	Scripts for working with series of patches
 License:	GPL
 Group:		Development/Other
-Version:	0.46
-Release:	%mkrel 5
+Version:	0.47
+Release:	%mkrel 1
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
-Requires:	diffstat
+Requires:	diffstat procmail
 Source:		quilt-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 # sendmail-command is needed for testing purpose
-BuildRequires: sendmail-command  diffstat
+BuildRequires: sendmail-command diffstat procmail
 
 %description
 The scripts allow to manage a series of patches by keeping
@@ -29,7 +29,7 @@ found at http://www.zip.com.au/~akpm/linux/patches/.
 %setup -q
 
 %build
-%configure
+%configure --with-mta=%{_sbindir}/sendmail --with-diffstat=%{_bindir}/diffstat
 make BUILD_ROOT=$RPM_BUILD_ROOT
 
 %check
@@ -48,11 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-, root, root)
 %config(noreplace) /etc/bash_completion.d/quilt
 %config(noreplace) /etc/quilt.quiltrc
-/usr/bin/guards
-/usr/bin/quilt
-/usr/share/quilt/
+%{_bindir}/*
+%{_datadir}/emacs/site-lisp/quilt.el
+%{_datadir}/%{name}/*
 %{_libdir}/quilt/
-/etc/bash_completion.d/quilt
 %doc %{_mandir}/man1/guards.*
 %doc %{_mandir}/man1/quilt.*
 %doc %{_docdir}/%{name}-%{version}
