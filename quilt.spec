@@ -6,12 +6,12 @@ Name:		quilt
 Summary:	Scripts for working with series of patches
 License:	GPL
 Group:		Development/Other
-Version:	0.47
+Version:	0.48
 Release:	%mkrel 1
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
 Requires:	diffstat procmail
-Source:		quilt-%{version}.tar.gz
+Source:		http://mirrors.zerg.biz/nongnu/quilt/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 # sendmail-command is needed for testing purpose
 BuildRequires: sendmail-command diffstat procmail
