@@ -6,7 +6,7 @@ Name:		quilt
 Summary:	Scripts for working with series of patches
 License:	GPLv2
 Group:		Development/Other
-Version:	0.51
+Version:	0.60
 Release:	%mkrel 1
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
@@ -46,7 +46,7 @@ mv -f %{buildroot}/%{_docdir}/%{name}/ %{buildroot}/%{_docdir}/%{name}-%{version
 %{_bindir}/*
 %{_datadir}/emacs/site-lisp/quilt.el
 %{_datadir}/%{name}/*
-%{_libdir}/quilt/
+#%{_libdir}/quilt/
 %{_mandir}/man1/*.1*
 %doc %{_docdir}/%{name}-%{version}
 %doc AUTHORS TODO
