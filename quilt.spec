@@ -9,7 +9,7 @@ Summary:	Scripts for working with series of patches
 License:	GPLv2
 Group:		Development/Other
 Version:	0.60
-Release:	2
+Release:	3
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
 Requires:	diffstat procmail ed
