@@ -8,12 +8,12 @@ Name:		quilt
 Summary:	Scripts for working with series of patches
 License:	GPLv2
 Group:		Development/Other
-Version:	0.64
-Release:	1
+Version:	0.60
+Release:	3
 URL:		http://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
 Requires:	diffstat procmail ed
-Source0:	http://download.savannah.guu.org/releases/quilt/%{name}-%{version}.tar.gz
+Source:		http://mirrors.zerg.biz/nongnu/quilt/%{name}-%{version}.tar.gz
 # sendmail-command is needed for testing purpose
 BuildRequires: sendmail-command diffstat procmail ed
 
@@ -24,6 +24,7 @@ applied, un-applied, refreshed, etc.
 
 The scripts are heavily based on Andrew Morton's patch scripts
 found at http://www.zip.com.au/~akpm/linux/patches/.
+
 
 %prep
 %setup -q
