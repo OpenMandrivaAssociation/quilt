@@ -10,7 +10,7 @@ License:	GPLv2
 Group:		Development/Other
 Version:	0.64
 Release:	1
-URL:		http://savannah.nongnu.org/projects/quilt
+URL:		https://savannah.nongnu.org/projects/quilt
 Requires:	coreutils diffutils patch gzip bzip2 perl mktemp gettext
 Requires:	diffstat procmail ed
 Source0:	http://download.savannah.guu.org/releases/quilt/%{name}-%{version}.tar.gz
